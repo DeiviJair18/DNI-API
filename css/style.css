@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+/* Estilo del contenedor principal */
+.hero {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    background: linear-gradient(to right, #6dd5fa, #2980b9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.input input {
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    width: 200px;
+    outline: none;
+    transition: 0.3s ease-in-out;
+}
+
+.input input:focus {
+    box-shadow: 0 0 10px rgba(109, 213, 250, 0.8);
+}
+
+.button button {
+    background: linear-gradient(45deg, #6dd5fa, #2980b9);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.button button:hover {
+    background: linear-gradient(45deg, #2980b9, #6dd5fa);
+}
+
+/* Estilo de los campos de resultado */
+.resultado {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.campo h2 {
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+.campo input {
+    width: 80%;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+}
